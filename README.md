@@ -77,3 +77,16 @@ x=[1,2,3]\\
 a = 2\\
 result=vectormult(x,a)\\
 print(result)\\
+
+def valuesofmatrix(x):
+  s=[]
+  for i in range(len(x)):
+    for j in range(len(x[i])):
+      s.append(x[i][j])
+  return s
+
+x=[[1,2,3],[4,5,6],[7,8,9]]
+result=valuesofmatrix(x) 
+#print(result)
+for k in range(len(result)):
+  print(result[k])
